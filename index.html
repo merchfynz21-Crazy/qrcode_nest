@@ -29,20 +29,36 @@ body{
     box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
-.header{
-    background:#0056b3;
-    color:#fff;
-    text-align:center;
-    padding:30px 20px;
+/* New Banner Style */
+.banner{
+    width: 100%;
+    height: 200px;
+    background: #004085; /* Fallback color if image fails */
+    overflow: hidden;
 }
 
-.header img{
-    width:120px;
-    height:120px;
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header{
+    text-align:center;
+    padding: 0 0px 0px 0px;
+    position: relative;
+}
+
+.header img.profile-img{
+    width:110px;
+    height:110px;
     border-radius:50%;
     border:4px solid #fff;
     object-fit:cover;
+    margin-top: -55px; /* Pulls the profile picture up into the banner area */
     margin-bottom:15px;
+    position: relative;
+    background: #fff; /* Prevents transparency issues */
 }
 
 .header h2{
@@ -107,13 +123,18 @@ body{
 </head>
 <body>
 
-
 <div class="card">
+
+    <!-- Banner Image Header -->
+    <div class="banner">
+        <!-- Replace with your banner image source -->
+        <img src="C:\Users\Asus\Desktop\New folder/Banner.png" alt="Banner">
+    </div>
 
     <div class="header">
 
-        <!-- Replace with your own photo -->
-        <img src="D:\_000ZITA PSI\ZETA PSI ID/akplogo.jpeg" >
+        <!-- Profile Image -->
+        <img src="D:\_000ZITA PSI\ZETA PSI ID/akplogo.jpeg" class="profile-img" alt="Profile">
 
         <h2>Nestor Fallore</h2>
         <p>Graphic Designer</p>
@@ -148,7 +169,6 @@ body{
                href="mailto:merchfynz21@gmail.com">
                ✉ Send Email
             </a>
-          
 
             <a class="btn facebook"
                href="https://www.facebook.com/kiddonz"
@@ -156,13 +176,12 @@ body{
                📘 Visit Facebook
             </a>
 
-
         </div>
 
     </div>
 
     <div class="footer">
-        © 2026 Alpha Kappa Rho. All Rights Reserved.
+        © 1973 Alpha Kappa Rho. All Rights Reserved.
     </div>
 
 </div>
